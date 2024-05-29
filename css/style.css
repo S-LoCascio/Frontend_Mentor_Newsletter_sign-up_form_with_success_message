@@ -22,6 +22,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+body .hide {
+  display: none;
+}
 
 .card {
   background-color: hsl(0, 0%, 100%);
@@ -74,9 +77,13 @@ body {
   color: white;
   font-weight: 700;
   font-size: 12px;
+  transition: background-image, 0.15s;
 }
 .card .card-text .card-sign-up-form input[type=submit]:hover {
   cursor: pointer;
+  border: none;
+  background-image: linear-gradient(to right, hsl(4, 100%, 67%), orange);
+  box-shadow: 5px 5px 20px hsl(4, 100%, 67%);
 }
 .card .card-img {
   justify-self: flex-end;
@@ -84,4 +91,41 @@ body {
 .card .card-img img {
   height: 100%;
   width: auto;
+  transition: scale 0.5s ease-out;
+}
+.card .card-img img:hover {
+  scale: 0.97;
+}
+
+.success-card {
+  background-color: hsl(0, 0%, 100%);
+  margin-top: 10%;
+  padding: 40px;
+  height: 50dvh;
+  width: 350px;
+  border-radius: 5%;
+}
+.success-card img,
+.success-card h1,
+.success-card p {
+  padding-bottom: 20px;
+}
+.success-card p {
+  font-weight: 500;
+  font-size: 12px;
+}
+.success-card .dismiss-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 0.75vh;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+}
+.success-card .dismiss-button:hover {
+  cursor: pointer;
+  border: none;
+  background-image: linear-gradient(to right, hsl(4, 100%, 67%), orange);
+  box-shadow: 5px 5px 20px hsl(4, 100%, 67%);
 }
