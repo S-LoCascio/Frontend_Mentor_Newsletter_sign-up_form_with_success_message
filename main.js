@@ -3,6 +3,7 @@ const email = document.getElementById("email");
 const errorElement = document.getElementById("error");
 const card = document.getElementById("card");
 const successCard = document.getElementById("successCard");
+const dismissButton = document.getElementById("dismissButton");
 
 submit.addEventListener("click", (e) => {
   let messages = [];
@@ -17,6 +18,13 @@ submit.addEventListener("click", (e) => {
   if (messages.length == 0) {
     e.preventDefault();
     card.classList.add("hide");
+    document.getElementById("submitEmail").innerText = email.value;
     successCard.classList.remove("hide");
   }
+});
+
+dismissButton.addEventListener("click", () => {
+  successCard.classList.add("hide");
+  card.classList.remove("hide");
+  email.classList.remove("error-box");
 });
