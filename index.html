@@ -36,7 +36,7 @@
   </head>
   <body>
     <!-- Sign-up form start -->
-    <div class="card hide">
+    <div class="card" id="card">
       <div class="card-text">
         <h1 class="card-text-header">Stay updated!</h1>
         <p class="card-text-para">
@@ -49,16 +49,21 @@
         </ul>
         <div class="card-sign-up-form">
           <p class="sign-up-email">Email address</p>
-          <form action="" class="email">
+          <div class="error" id="error"></div>
+          <form id="form" action="" method="GET" class="email">
             <input
+              name="email"
+              class=""
               type="text"
               id="email"
+              autocomplete="off"
               placeholder="      email@company.com"
             />
             <input
               type="submit"
               class="email-submit"
               value="Subscribe to monthly newsletter"
+              id="submit"
             />
           </form>
         </div>
@@ -74,7 +79,7 @@
     <!-- Sign-up form end -->
 
     <!-- Success message start -->
-    <div class="success-card">
+    <div class="success-card hide" id="successCard">
       <img
         class="success-image"
         src="assets/images/icon-success.svg"
@@ -99,6 +104,8 @@
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
+
+      <script src="main.js"></script>
     </div>
   </body>
 </html>

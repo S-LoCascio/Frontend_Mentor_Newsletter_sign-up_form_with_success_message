@@ -57,6 +57,7 @@ body {
     }
 
     .card-sign-up-form {
+      position: relative;
       margin-right: 5%;
       p {
         font-weight: 700;
@@ -72,6 +73,17 @@ body {
         margin-bottom: 7%;
         font-weight: 500;
         font-size: 12px;
+      }
+
+      .error-box {
+        border: 1px $tomato solid !important;
+        background-color: lighten($tomato, 25%);
+        color: $tomato;
+      }
+
+      .error-box::placeholder {
+        color: $tomato;
+        opacity: 1;
       }
 
       input[type="text"]:hover {
@@ -94,6 +106,16 @@ body {
         background-image: linear-gradient(to right, $tomato, orange);
         box-shadow: 5px 5px 20px $tomato;
       }
+
+      .error {
+        position: absolute;
+        font-weight: 700;
+        font-size: 10px;
+        margin-bottom: 2%;
+        color: $tomato;
+        left: 210px;
+        bottom: 100px;
+      }
     }
   }
 
@@ -103,11 +125,11 @@ body {
     img {
       height: 100%;
       width: auto;
-      transition: scale 0.5s ease-out;
+      transition: scale 0.25s ease-out;
     }
 
     img:hover {
-      scale: 0.97;
+      scale: 1.05;
     }
   }
 }
