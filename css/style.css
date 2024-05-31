@@ -115,7 +115,7 @@ body .hide {
 }
 .card .card-img img {
   height: 410px;
-  width: auto;
+  width: 305px;
   transition: scale 0.25s ease-out;
 }
 .card .card-img img:hover {
