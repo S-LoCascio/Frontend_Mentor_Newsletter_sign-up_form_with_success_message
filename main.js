@@ -4,6 +4,7 @@ const errorElement = document.getElementById("error");
 const card = document.getElementById("card");
 const successCard = document.getElementById("successCard");
 const dismissButton = document.getElementById("dismissButton");
+const form = document.getElementById("form");
 
 submit.addEventListener("click", (e) => {
   let messages = [];
@@ -24,6 +25,8 @@ submit.addEventListener("click", (e) => {
 });
 
 dismissButton.addEventListener("click", () => {
+  form.reset();
+  errorElement.remove();
   successCard.classList.add("hide");
   card.classList.remove("hide");
   email.classList.remove("error-box");
