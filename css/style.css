@@ -30,7 +30,7 @@ body .hide {
 .card {
   background-color: hsl(0, 0%, 100%);
   margin-top: 10%;
-  height: 60dvh;
+  height: 60vh;
   width: 700px;
   border-radius: 2vh;
   display: flex;
