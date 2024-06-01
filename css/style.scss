@@ -34,25 +34,31 @@ body {
 .card {
   background-color: $white;
   margin-top: 10%;
-  height: 60vh;
-  width: 700px;
+  height: 520px;
+  width: 800px;
   border-radius: 2vh;
   display: flex;
   justify-content: space-between;
-  padding: 1%;
+  padding: 15px;
 
   .card-text {
     padding: 5%;
 
-    .card-text-para {
+    h1 {
+      font-size: 45px;
       margin-top: 5%;
+    }
+
+    .card-text-para {
+      margin-top: 6%;
+      font-size: 16px;
     }
     .card-text-ul {
       margin-top: 5%;
       margin-left: 8%;
       margin-bottom: 5%;
       font-weight: 700;
-      font-size: 12px;
+      font-size: 14px;
     }
 
     .card-sign-up-form {
@@ -113,8 +119,8 @@ body {
         font-size: 10px;
         margin-bottom: 2%;
         color: $tomato;
-        left: 210px;
-        bottom: 100px;
+        left: 240px;
+        bottom: 105px;
       }
     }
   }
@@ -123,9 +129,10 @@ body {
     justify-self: flex-end;
 
     img {
-      height: 500px;
-      width: 305px;
+      height: auto;
+      width: 100%;
       transition: scale 0.25s ease-out;
+      object-fit: cover;
     }
 
     img:hover {
@@ -138,8 +145,8 @@ body {
   background-color: $white;
   margin-top: 10%;
   padding: 40px;
-  height: 50dvh;
-  width: 350px;
+  height: 400px;
+  width: 380px;
   border-radius: 5%;
 
   img,
@@ -147,10 +154,13 @@ body {
   p {
     padding-bottom: 20px;
   }
-
+  h1 {
+    font-size: 40px;
+  }
   p {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 20px;
   }
 
   .dismiss-button {
@@ -214,6 +224,11 @@ body {
       flex: 1 1 60%;
       font-size: 20px;
       margin-top: 10%;
+
+      h1 {
+        font-size: 45px;
+        margin-top: 0;
+      }
 
       .card-text-header {
         margin-bottom: 10%;
